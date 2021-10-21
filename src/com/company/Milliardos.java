@@ -1,5 +1,5 @@
 package com.company;
 
 public interface Milliardos {
-    void kutyutKeszit();
+    public void kutyutKeszit();
 }

@@ -43,7 +43,8 @@ public class Kepregeny {
         }
     }
 
-    public static void Beolvas(){
+
+    public static void main(String[] args) {
         try {
             szereplok("szuperhos.txt");
             szuperhosok();

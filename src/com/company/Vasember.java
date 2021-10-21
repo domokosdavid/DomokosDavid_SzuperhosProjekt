@@ -6,8 +6,7 @@ public class Vasember extends Bosszuallo implements Milliardos{
         super(150, true);
     }
     public void kutyutKeszit(){
-        this.getSzuprerero();
-        this.setSzuprerero(Math.random()*10);
+        setSzuprerero(getSzuprerero()+Math.random()*10);
     }
 
     @Override

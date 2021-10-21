@@ -2,6 +2,6 @@ package com.company;
 
 public interface Szuperhos {
 
-    boolean legyoziE(Szuperhos d);
-    double mekkoraAzEreje();
+    public boolean legyoziE(Szuperhos d);
+    public double mekkoraAzEreje();
 }
