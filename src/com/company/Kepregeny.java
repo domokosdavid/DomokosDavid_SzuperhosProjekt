@@ -15,6 +15,41 @@ public class Kepregeny {
         String sor = br.readLine();
         while (sor != null){
             String [] szavak = sor.split(" ");
+            if(szavak[0].equals("Vasember")){
+                Vasember v = new Vasember();
+                for(int i=0; i<Integer.parseInt(szavak[1]); i++){
+                    v.kutyutKeszit();
+                }
+                lista.add(v);
+            }
+            else if (szavak[0].equals("Batman")){
+                Batman v = new Batman();
+                for(int i=0; i<Integer.parseInt(szavak[1]); i++){
+                    v.kutyutKeszit();
+                }
+                lista.add(v);
+            }
+            else{
+                System.out.println("Hibás a sor!");
+            }
+            sor = br.readLine();
+        }
+        br.close();
+    }
+
+    public static void szuperhosok(){
+        for(int i = 0; i<lista.size(); i++){
+            System.out.println(lista.get(i).toString());
         }
     }
+
+    public static void Beolvas(){
+        try {
+            szereplok("szuperhos.txt");
+            szuperhosok();
+        }catch (Exception ex){
+            System.out.println("Error!");
+        }
+    }
+
 }
