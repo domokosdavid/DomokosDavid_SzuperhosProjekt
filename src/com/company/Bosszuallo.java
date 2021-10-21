@@ -45,4 +45,6 @@ public abstract class Bosszuallo implements Szuperhos{
         return "Bosszúálló szuperereje: "+ szuperero +
                 ", Van gyengesége:  " + vanEGyengesege;
     }
+
+
 }
