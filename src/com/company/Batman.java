@@ -1,4 +1,5 @@
 package com.company;
 
-public class Batman {
+public class Batman implements Szuperhos, Milliardos{
+
 }
